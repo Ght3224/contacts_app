@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
 
   get '/contact' => 'contacts#the_contact'
+
+  get '/show' => 'contacts#show'
+  
   end
 end
