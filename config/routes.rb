@@ -7,9 +7,18 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
 
 
-  get '/contact' => 'contacts#the_contact'
+  get '/contacts' => 'contacts#index'
 
-  get '/show' => 'contacts#show'
+  get '/contacts/:id' => 'contacts#show'
+
+
+  post '/contacts/' => 'contacts#create'
+
+  patch '/contacts/:id' => 'contacts#update'
+
+
+  delete  '/contacts/:id' => 'contacts#destroy'
+
   
   end
 end

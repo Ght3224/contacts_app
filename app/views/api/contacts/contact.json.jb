@@ -1,3 +1,0 @@
-{
-  message: @contact.each{|contact| contact} 
-}
