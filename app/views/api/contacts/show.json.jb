@@ -1,1 +1,2 @@
-{message: @contact}
+render partial: 'contact.json.jb', locals: {  
+  contact: @contact}
