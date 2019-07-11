@@ -1,9 +1,12 @@
 { 
+    first_name: contact.first_name,
+    last_name: contact.last_name, 
+    middle_name: contact.middle_name,
     name: contact.full_name, 
-    # last_name: contact.last_name, 
     email: contact.email, 
+    bio: contact.bio,
     phone_number: contact.phone_number,
     updated_at: contact.friendly_updated_at, 
-    created_at: contact.created_at
-
-  }
+    created_at: contact.created_at,
+    user_id: contact.user_id
+}

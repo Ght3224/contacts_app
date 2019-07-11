@@ -3,12 +3,10 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }]
 #   Character.create(name: 'Luke', movie: movies.first)
 
+contact7 = Contact.new(first_name: Faker::Name.name).save
 
-
-
-
-contact7 = Contact.new({first_name: Faker::Name.name}).save 
-
+contact9 = Contact.new(first_name: Faker::Name.name, middle_name:
+  Faker::Name.name).save

@@ -1,4 +1,4 @@
-@contact.map do |contact|
+@contacts.map do |contact|
   # {
 
   #   name: contact.full_name, 
@@ -8,10 +8,6 @@
   #   updated_at: contact.friendly_updated_at, 
   #   created_at: contact.created_at
 
-
   # }
-
-
-  render partial: 'contact.json.jb', locals: {contact: contact}
-
-end 
+  render partial: 'contact.json.jb', locals: { contact: contact }
+end
