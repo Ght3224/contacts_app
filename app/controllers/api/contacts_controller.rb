@@ -3,11 +3,11 @@ class Api::ContactsController < ApplicationController
     @contacts = Contact.all
     # render 'index.json.jb'
     # if youre logged in, see your contacts
-    if current_user
-      @contacts = current_user.contacts
-    else
-      @contacts = []
-    end
+    # if current_user
+    #   @contacts = current_user.contacts
+    # else
+    #   @contacts = []
+    # end
     render 'index.json.jb'
   end
 
