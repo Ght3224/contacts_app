@@ -1,12 +1,12 @@
 class Contact < ApplicationRecord
-  belongs_to :user
-  has_many :user_groups 
-  has_many :groups, through: :user_groups 
+  # belongs_to :user
+  # # has_many :user_groups 
+  # has_many :groups, through: :user_groups 
 
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP, message:
-    'only allows valid emails' }
+  # validates :first_name, presence: true
+  # validates :last_name, presence: true
+  # # validates :email, format: { with: URI::MailTo::EMAIL_REGEXP, message:
+  #   'only allows valid emails' }
 
 
 
@@ -16,8 +16,8 @@ class Contact < ApplicationRecord
 
   end 
 
-  def full_name 
-    first_name + " " + last_name
-  end
+  # def full_name 
+  #   first_name + " " + last_name
+  # end
 
 end

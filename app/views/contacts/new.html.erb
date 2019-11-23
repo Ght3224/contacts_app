@@ -1,0 +1,19 @@
+<form action= "/contacts" method = "post">
+  first_name<input type = "text" name="first_name">
+  last_name<input type = "text" name="last_name">
+  email<input type = "text" name="email">
+  <!-- Price <input type = "text" name="price"> -->
+
+  <p>user: </p>
+  <select name="user_id">
+    <% @users.each do |user| %>
+    <option value="<%=user.id%>"><%=user.name%>
+    </option>
+    <% end %>
+  </select>
+
+
+  <!-- URL <input type = "text" name="url"> -->
+  <!-- email<input type = "text" name="email"> -->
+<input type="submit" value="Make a new contact here">
+</form>

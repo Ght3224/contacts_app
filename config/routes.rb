@@ -10,8 +10,17 @@ Rails.application.routes.draw do
     post '/contacts/' => 'contacts#create'
     patch '/contacts/:id' => 'contacts#update'
     delete '/contacts/:id' => 'contacts#destroy'
+    get '/users' => 'users#index'
     post '/users' => 'users#create'
     get '/users/:id' => 'users#show'
     post '/sessions' => 'sessions#create'
   end
-end
+    get '/contacts' => 'contacts#index'
+    get '/contacts/new' => 'contacts#new'
+    get '/contacts/:id' => 
+    'contacts#show'
+    post '/contacts/' => 'contacts#create'
+    get '/contacts/:id/edit' => 'contacts#edit' 
+    patch '/contacts/:id' => 'contacts#update'
+    delete '/contacts/:id' => 'contacts#destroy'
+end 

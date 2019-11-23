@@ -1,0 +1,18 @@
+<a href="/contacts">Home Page</a>
+
+<div><%=@contact.first_name%></div>
+
+<div><%=@contact.last_name%></div>
+<div><%=@contact.email%></div>
+<div><%=@contact.created_at%></div>
+
+
+<a href ="/contacts/<%=@contact.id%>/edit">Edit</a>
+
+
+<!-- <form action="/contacts/<%=@contact.id%>" method="post">
+  <input type = "hidden" name= "_method" value="delete">
+
+ -->
+
+<a href="/contacts/<%=@contact.id%>" data-method="delete" rel="nofollow"> Delete this contact</a>

@@ -7,7 +7,13 @@ class Api::ContactsController < ApplicationController
     #   @contacts = current_user.contacts
     # else
     #   @contacts = []
-    # end
+
+    # group = Group.find_by(id: 2)
+
+    # @contacts = group.contacts 
+
+    # @contacts = @contacts.where(user_id: current_user.id)
+    # # end
     render 'index.json.jb'
   end
 

@@ -1,0 +1,11 @@
+
+<% @contacts.each do |contact| %>
+<hr style="color: red">
+<a href='/contacts/<%=contact.id%>'>Show Page</a>
+
+<%= contact.first_name %>
+<%= contact.last_name %>
+<%end%>
+
+
+
